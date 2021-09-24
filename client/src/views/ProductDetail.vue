@@ -168,75 +168,79 @@ export default {
   }
 }
 </script>
-<style>
-.section-productDetail .inner {
-  align-items: center;
-}
+<style lang="scss">
+.section-productDetail {
+  .inner {
+    align-items: center;
+  }
 
-.section-productDetail .card-title {
-  margin-bottom: 0;
-}
+  .card-title {
+    margin-bottom: 0;
+  }
 
-.section-productDetail .totalPriceBox {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-}
+  .totalPriceBox {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
 
+  .pCount {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 
-.section-productDetail .pCount {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
+  .pTotalPrice {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
-.section-productDetail .pTotalPrice {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
+    strong {
+      margin-left: 10px;
+      font-size: 1.875rem;
+      color: #ff5100;
+    }
+  }
+  .orderBtn {
+    background: #ffb24d;
+  }
 
-.section-productDetail .pTotalPrice strong {
-  margin-left: 10px;
-  font-size: 1.875rem;
-  color: #ff5100;
-}
+  .tabMenu {
+    .nav-link {
+      color: #000;
+    }
+    .nav-link.active {
+      color: #ff5100;
+    }
+  }
 
-.section-productDetail .orderBtn {
-  background: #ffb24d;
-}
+  .tab-pane {
+    padding: 40px 0;
 
-.section-productDetail .tabMenu .nav-link {
-  color: #000;
-}
-
-.section-productDetail .tabMenu .nav-link.active {
-  color: #ff5100;
-}
-
-.section-productDetail .tab-pane {
-  padding: 40px 0;
-}
-
-.section-productDetail .tab-pane img {
-  width: 100%;
-  max-width: 700px;
+    img {
+      width: 100%;
+      max-width: 700px;
+    }
+  }
 }
 
 @media all and (max-width: 500px) {
-  .section-productDetail .totalPriceBox {
-  flex-flow: column nowrap;
-  justify-content: center;
+
+  .section-productDetail {
+    .totalPriceBox {
+      flex-flow: column nowrap;
+      justify-content: center;
+    }
+  
+  .pCount {
+    justify-content: center;
+  }
+
+  .pTotalPrice {
+    justify-content: center;
+    margin-top: 15px;
+  }
 }
 
-
-.section-productDetail .pCount {
-  justify-content: center;
-}
-
-.section-productDetail .pTotalPrice {
-  justify-content: center;
-  margin-top: 15px;
-}
 }
 </style>

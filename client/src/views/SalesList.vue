@@ -88,7 +88,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .updateBox {
   width: 98%!important;
   margin: 0 auto  
@@ -97,29 +97,31 @@ export default {
   width: 98%!important;
   margin: 0 auto;
 } */
-.section-salesList th, 
-.section-salesList td {
-  vertical-align: middle;
-}
-.section-salesList .pImg {
+.section-salesList {
+  th,td {
+    vertical-align: middle;
+  }
+
+  .pImg {
   width: 10%
-}
-.section-salesList .pBrand {
-  width: 10%
-}
-.section-salesList .pName {
-  width: 30%
-}
-.section-salesList .pPrice{
-  width: 10%
-}
-.section-salesList .pDeliveryPrice {
-  width: 10%
-}
-.section-salesList .pAddDeliveryPrice {
-  width: 10%
-}
-.section-salesList .pBtns {
-  width: 20%;
-}
+  }
+  .pBrand {
+    width: 10%
+  }
+  .pName {
+    width: 30%
+  }
+  .pPrice{
+    width: 10%
+  }
+  .pDeliveryPrice {
+    width: 10%
+  }
+  .pAddDeliveryPrice {
+    width: 10%
+  }
+  .pBtns {
+    width: 20%;
+  }
+} 
 </style>

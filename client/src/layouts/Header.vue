@@ -1,4 +1,5 @@
 <template>
+  <header class="header">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <router-link class="navbar-brand" to="/">
@@ -27,12 +28,13 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/sales">제품 리스트</router-link>
           </li>
-          <li v-if="user.email = undefined">
+          <!-- <li v-if="user.email = undefined">
             <button type="button" class="btn btn-light">로그인</button>
           </li>
           <li v-else>
             <button type="button" class="btn btn-light">로그아웃</button>
-          </li>
+          </li> -->
+          <button type="button" class="btn btn-light">로그인</button>
         </ul>
 
 
@@ -44,6 +46,7 @@
       </div>
     </div>
   </nav>
+  </header>
 </template>
 <script>
 export default {
@@ -104,23 +107,26 @@ export default {
 }
 </script>
 
-<style>
-.navbar {
+<style lang="scss">
+.header {
+  .navbar {
   background: #131921!important;
+  }
+
+  .navbar-brand img {
+      width: 120px;
+  }
+
+  .navbar-nav button {
+    margin-left: 10px;
+    background: #ffb24d;
+    border: none;
+  }
+
+  .searchBox button {
+    background: #ffb24d;
+  }
 }
 
-.navbar-brand img {
-    width: 120px;
-}
-
-.navbar-nav button {
-  margin-left: 10px;
-  background: #ffb24d;
-  border: none;
-}
-
-.searchBox button {
-  background: #ffb24d;
-}
 
 </style>

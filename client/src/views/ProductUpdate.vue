@@ -310,35 +310,42 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 
-.section-update .row {
-  align-items: center;
-}
-.section-update .row label {
-  text-align: left;
-}
-.section-update .row select {
-  width: 110px;
-}
+.section-update {
+  .row {
+    align-items: center;
 
-.section-update .pimg_box {
-  position: relative;
-}
-.section-update .pimg_box img {
-  width: 100%;
-  box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.2);
-}
-.section-update .del_btn {
-  position: absolute;
-  top: 0;
-  right: 8px;
-  cursor: pointer;
-  font-size: 1.875rem;
-  color: #ee8015;
-}
-.section-update .detail_img .pimg_box {
-  height: 200px;
-  overflow: hidden;
-}
+    label {
+      text-align: left;
+    }
+
+    select {
+      width: 110px;
+    }
+  }
+  .pimg_box {
+    position: relative;
+
+    img {
+      width: 100%;
+      box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.2);
+    }
+  }
+
+  .del_btn {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    cursor: pointer;
+    font-size: 1.875rem;
+    color: #ee8015;
+  }
+
+  .detail_img .pimg_box {
+    height: 200px;
+    overflow: hidden;
+  }
+
+} 
 </style>

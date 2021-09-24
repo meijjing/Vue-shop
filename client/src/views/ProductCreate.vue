@@ -371,14 +371,16 @@ export default {
 }
 </script>
 
-<style>
-.section-create .row {
-  align-items: center;
-}
-.section-create .row label {
-  text-align: left;
-}
-.section-create .row select {
-  width: 110px;
+<style lang="scss">
+.section-create {
+  .row {
+    align-items: center;
+  }
+  .section-create .row label {
+    text-align: left;
+  }
+  .section-create .row select {
+    width: 110px;
+  }
 }
 </style>
